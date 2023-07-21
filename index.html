@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biker Zone</title>
+
+    <!-- Tailwind & Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#E76F51",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- custom styles -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-poppins">
+    <header class="md:container md:mx-auto lg:mt-14">
+      <nav class="flex items-center justify-between">
+        <!-- nav-logo -->
+        <div>
+          <h3 class="text-4xl font-bold">Biker Zone</h3>
+        </div>
+
+        <!-- nav-menu -->
+        <div>
+          <ul class="flex items-center gap-9">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+            <button class="btn btn-error bg-primary text-white">
+              <a href="#">login</a>
+            </button>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
