@@ -42,20 +42,52 @@
     </style>
   </head>
   <body class="font-poppins">
-    <header class="md:container md:mx-auto lg:mt-14">
-      <nav class="flex items-center justify-between">
+    <header class="container mx-auto md:container md:mx-auto lg:mt-14">
+      <nav class="flex items-center justify-between md:scale-100 md:p-4">
         <!-- nav-logo -->
         <div>
           <h3 class="text-4xl font-bold">Biker Zone</h3>
         </div>
 
         <!-- nav-menu -->
-        <div>
+        <div class="hidden md:block">
           <ul class="flex items-center gap-9">
             <li><a href="">Home</a></li>
             <li><a href="">Shop</a></li>
             <li><a href="">News</a></li>
             <li><a href="">Contact</a></li>
+            <button class="btn btn-error bg-primary text-white">
+              <a href="#">login</a>
+            </button>
+          </ul>
+        </div>
+
+        <!-- mobile-nav -->
+        <div class="dropdown md:hidden">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
             <button class="btn btn-error bg-primary text-white">
               <a href="#">login</a>
             </button>
