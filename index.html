@@ -476,20 +476,26 @@
       </section>
 
       <!-- FAQ section -->
-      <section class="">
+      <section class="md:p-6">
         <h3 class="text-3xl lg:text-5xl text-center font-semibold">
           Frequently Asked <span class="text-[#E76F51]">Questions</span>
         </h3>
 
         <!-- hero section -->
-        <div class="flex items-center justify-center md:gap-24 md:mt-12">
+        <div
+          class="flex flex-col gap-8 p-4 mt-4 items-center justify-center md:flex-col md:mt-12 md:gap-8 lg:flex-row lg:gap-24"
+        >
           <!-- faq image -->
-          <div>
-            <img src="images/others/faq.png" alt="" />
+          <div class="w-3/4 md:w-1/2 lg:w-auto">
+            <img
+              class="md:w-3/4 md:mx-auto lg:w-auto"
+              src="images/others/faq.png"
+              alt=""
+            />
           </div>
 
           <!-- accordion -->
-          <div class="md:w-1/2 space-y-6">
+          <div class=" scale-90 md:scale-90 lg:scale-100 lg:w-1/2 space-y-6">
             <div class="collapse collapse-arrow border-2">
               <input type="radio" name="my-accordion-2" checked="checked" />
               <div class="collapse-title text-xl font-medium">
